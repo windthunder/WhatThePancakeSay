@@ -1,0 +1,21 @@
+.button {
+  border: 1px solid #000;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  font-size: 40px;
+}
+
+.button.l {
+  text-align: left;
+}
+
+.button.r {
+  text-align: right;
+}
+
+/* 按下效果 */
+.button.active {
+  background-color: #000;
+  color: #fff;
+}
