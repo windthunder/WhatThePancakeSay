@@ -1,14 +1,13 @@
 .button {
   border: 1px solid #000;
-  display: block;
-  border-radius: 5px;
+  /* display: block; */
+  /* border-radius: 5px; */
   padding: 8px;
+  box-sizing: border-box;
   background-color: #fff;
   margin: 10px;
-  /* width: 60px;
-  height: 60px;
-  margin: 10px;
-  font-size: 40px; */
+  width: 100px;
+  height: 100px;
 }
 
 .button.l {
@@ -19,8 +18,15 @@
   text-align: right;
 }
 
-/* 按下效果 */
 .button.active {
   background-color: #000;
   color: #fff;
+}
+
+#page1 {
+  height: 2000px;
+}
+
+#page2 {
+  min-height: 2000px;
 }
