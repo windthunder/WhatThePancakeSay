@@ -282,9 +282,7 @@ $(() => {
     let { sound, loop, keybind } = this.dataset;
     sound = new Audio(`./sounds/meow/${sound}.mp3`);
     sound.addEventListener('loadedmetadata', () => {
-      console.log(this);
       let sound = this.sound;
-      console.log(decodeURI(sound.src), sound.duration);
       this.innerHTML = `${this.innerHTML} <span style="color: green; font-size: 0.8em">${sound.duration.toFixed(1)}s</span>`;
     });
     sounds.push(sound);
