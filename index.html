@@ -10,75 +10,110 @@
   <title>Document</title>
 </head>
 <body>
-  <!-- <div style="display: flex; width: 100%;">
-    <div style="display: flex;">
-      <div class="button l" data-keybind="Q" data-sound="elicca">Q</div>
-      <div class="button l" data-keybind="W" data-sound="elicca">W</div>
-      <div class="button l" data-keybind="E" data-sound="elicca">E</div>
-      <div class="button l" data-keybind="R" data-sound="elicca">R</div>
-    </div>
-
-  </div> -->
-
-  <div id="progressText"> </div>
-  <!-- <div id="main"></div> -->
-
   <div id="page1">
     <h1>喵系列</h1>
     <div style="display: flex; width: 100%;">
       <!-- 2022.01.30 喵~~~~.mp3 -->
-      <div class="button l" data-keybind="Q" data-sound="2022.01.30 汪~~~~">Q</div>
-      <!-- 2022.01.30 汪~~~~.mp3 -->
-      <div class="button l" data-keybind="W" data-sound="2022.01.30 喵~~~~">W</div>
-      <!-- 2022.08.06 喵喵喵.mp3 -->
-      <div class="button l" data-keybind="E" data-sound="2022.08.06 喵喵喵">E</div>
-      <!-- 2022.08.06 喵喵喵喵喵~.mp3 -->
-      <div class="button l" data-keybind="R" data-sound="2022.08.06 喵喵喵喵喵~">R</div>
-      <!-- 2022.08.06 用貓喵語說話.mp3 -->
-      <div class="button l" data-keybind="T" data-sound="2022.08.06 用貓喵語說話">T</div>
+      <div class="button l" data-keybind="Q" data-sound="2022.01.30 喵~~~~">Q</div>
+      <!-- 2022.03.10 什麼音容宛在 我還在.mp3 -->
+      <div class="button l" data-keybind="W" data-sound="2022.03.10 什麼音容宛在 我還在">W</div>
+      <!-- 2022.03.10 我還沒死.mp3 -->
+      <div class="button l" data-keybind="E" data-sound="2022.03.10 我還沒死">E</div>
+      <!-- 2022.08.06-1.mp3 -->
+      <div class="button l" data-keybind="R" data-sound="2022.08.06-1">R</div>
+      <!-- 2022.08.06-10.mp3 -->
+      <div class="button l" data-keybind="T" data-sound="2022.08.06-10">T</div>
+      <!-- 2022.08.06-11.mp3 -->
+      <div class="button l" data-keybind="Y" data-sound="2022.08.06-11">Y</div>
+      <!-- 2022.08.06-12.mp3 -->
+      <div class="button l" data-keybind="U" data-sound="2022.08.06-12">U</div>
+      <!-- 2022.08.06-8.mp3 -->
+      <div class="button l" data-keybind="I" data-sound="2022.08.06-8">I</div>
+      <!-- 2022.08.06-9.mp3 -->
+      <div class="button l" data-keybind="O" data-sound="2022.08.06-9">O</div>
       <!-- 2022.12.05 喵.mp3 -->
-      <div class="button l" data-keybind="Y" data-sound="2022.12.05 喵">Y</div>
-      <!-- 2023.05.20 日常喵.mp3 -->
-      <div class="button l" data-keybind="U" data-sound="2023.05.20 日常喵">U</div>
-      <!-- 2023.05.20 路牧喵.mp3 -->
-      <div class="button l" data-keybind="I" data-sound="2023.05.20 路牧喵">I</div>
-      <!-- 2023.05.20 Henry喵.mp3 -->
-      <div class="button l" data-keybind="O" data-sound="2023.05.20 Henry喵">O</div>
-      <!-- 2022.12.12 nananana.mp3 -->
-      <div class="button l" data-keybind="P" data-sound="2022.12.12 nananana">P</div>
+      <div class="button l" data-keybind="P" data-sound="2022.12.05 喵">P</div>
+      <!-- 2023.04.05-6.mp3 -->
+      <div class="button l" data-keybind="[" data-sound="2023.04.05-6">[</div>
+      <!-- 2023.05.20-1.mp3 -->
+      <div class="button l" data-keybind="]" data-sound="2023.05.20-1">]</div>
     </div>
     <div style="display: flex; width: 100%; position: relative; left: 55px">
-      <!-- 2022.12.12 喵喵喵.mp3 -->
-      <div class="button l" data-keybind="A" data-sound="2022.12.12 喵喵喵">A</div>
-      <!-- 2022.12.21 EEEEE.mp3 -->
-      <div class="button l" data-keybind="S" data-sound="2022.12.21 EEEEE">S</div>
-      <!-- 2022.12.25 蘿可 喵.mp3 -->
-      <div class="button l" data-keybind="D" data-sound="2022.12.25 蘿可 喵">D</div>
-      <!-- 2023.01.21 喵.mp3 -->
-      <div class="button l" data-keybind="F" data-sound="2023.01.21 喵">F</div>
-      <!-- 2023.04.05 喵叫 短.mp3 -->
-      <div class="button l" data-keybind="G" data-sound="2023.04.05 喵叫 短">G</div>
-      <!-- 2023.04.05 喵叫 長.mp3 -->
-      <div class="button l" data-keybind="H" data-sound="2023.04.05 喵叫 長">H</div>
-      <!-- 2023.04.05 喵短2.mp3 -->
-      <div class="button l" data-keybind="J" data-sound="2023.04.05 喵短2">J</div>
-      <!-- 2023.04.05 喵長短2.mp3 -->
-      <div class="button l" data-keybind="K" data-sound="2023.04.05 喵長短2">K</div>
-      <!-- 2023.05.20 亂喵.mp3 -->
-      <div class="button l" data-keybind="L" data-sound="2023.05.20 亂喵">L</div>
+      <!-- 2022.08.06-2.mp3 -->
+      <div class="button l" data-keybind="A" data-sound="2022.08.06-2">A</div>
+      <!-- 2022.08.06-3.mp3 -->
+      <div class="button l" data-keybind="S" data-sound="2022.08.06-3">S</div>
+      <!-- 2022.08.06-4.mp3 -->
+      <div class="button l" data-keybind="D" data-sound="2022.08.06-4">D</div>
+      <!-- 2022.08.06-5.mp3 -->
+      <div class="button l" data-keybind="F" data-sound="2022.08.06-5">F</div>
+      <!-- 2022.08.06-6.mp3 -->
+      <div class="button l" data-keybind="G" data-sound="2022.08.06-6">G</div>
+      <!-- 2022.08.06-7.mp3 -->
+      <div class="button l" data-keybind="H" data-sound="2022.08.06-7">H</div>
+      <!-- 2022.12.12 nananana.mp3 -->
+      <div class="button l" data-keybind="J" data-sound="2022.12.12 nananana">J</div>
+      <!-- 2022.12.12-1.mp3 -->
+      <div class="button l" data-keybind="K" data-sound="2022.12.12-1">K</div>
+      <!-- 2022.12.12-2.mp3 -->
+      <div class="button l" data-keybind="L" data-sound="2022.12.12-2">L</div>
+      <!-- 2023.04.05-5.mp3 -->
+      <div class="button l" data-keybind=";" data-sound="2023.04.05-5">;</div>
+      <!-- 2023.06.06-1.mp3 -->
+      <div class="button l" data-keybind="'" data-sound="2023.06.06-1">'</div>
     </div>
     <div style="display: flex; width: 100%; position: relative; left: 110px">
-      <!-- 2023.05.20 喵 It's me OK.mp3 -->
-      <div class="button l" data-keybind="Z" data-sound="2023.05.20 喵 It's me OK">Z</div>
-      <!-- 2023.05.20 喵.mp3 -->
-      <div class="button l" data-keybind="X" data-sound="2023.05.20 喵">X</div>
-      <!-- 2023.06.06 喵喵喵喵.mp3 -->
-      <div class="button l" data-keybind="C" data-sound="2023.06.06 喵喵喵喵">C</div>
+      <!-- 2022.12.12-3.mp3 -->
+      <div class="button l" data-keybind="Z" data-sound="2022.12.12-3">Z</div>
+      <!-- 2022.12.21 EEEEE.mp3 -->
+      <div class="button l" data-keybind="X" data-sound="2022.12.21 EEEEE">X</div>
+      <!-- 2022.12.25 蘿可 喵.mp3 -->
+      <div class="button l" data-keybind="C" data-sound="2022.12.25 蘿可 喵">C</div>
+      <!-- 2023.04.05 喵短2.mp3 -->
+      <div class="button l" data-keybind="V" data-sound="2023.04.05 喵短2">V</div>
+      <!-- 2023.04.05 喵長短2.mp3 -->
+      <div class="button l" data-keybind="B" data-sound="2023.04.05 喵長短2">B</div>
+      <!-- 2023.04.05-1.mp3 -->
+      <div class="button l" data-keybind="N" data-sound="2023.04.05-1">N</div>
+      <!-- 2023.04.05-2.mp3 -->
+      <div class="button l" data-keybind="M" data-sound="2023.04.05-2">M</div>
+      <!-- 2023.04.05-3.mp3 -->
+      <div class="button l" data-keybind="," data-sound="2023.04.05-3">,</div>
+      <!-- 2023.04.05-4.mp3 -->
+      <div class="button l" data-keybind="." data-sound="2023.04.05-4">.</div>
+
+
     </div>
 
   </div>
   <div id="page2">
     <h1>其他鬆餅叫聲</h1>
+    <h2>瓜</h2>
+    <div class="button" data-sound="2022.10.31 什麼叫做讓你的心也跟著南瓜">什麼叫做讓你的心也跟著南瓜！</div>
+
+
+    <h2>金孫點點名</h2>
+
+    <h2>鬆餅噪音</h2>
+    <div class="button" data-sound="2022.03.10 什麼音容宛在 我還在">什麼音容宛在 我還在</div>
+    <div class="button" data-sound="2022.10.02 【早安洛可起床了嗎】雜談！來聊聊這個禮拜做了甚麼吧！首先我要先起床。【洛可洛斯特 _ VTUBER】 (1080p_30fps_H264-128kbit_AAC) 02_01_08-02_01_18">微笑小洛可</div>
+    <div class="button" data-sound="2022.10.31 媽媽我要回家啊">媽媽我要回家啊</div>
+    <div class="button" data-sound="2022.10.31 第幾次了第幾次了">第幾次了第幾次了</div>
+    <!-- 2022.12.05 快點說我可愛.mp3 -->
+    <div class="button" data-sound="2022.12.05 快點說我可愛">快點說我可愛</div>
+    <!-- 2022.12.05 我看起來像是會拋棄你們的人嗎？我那麼重情重義.mp3 -->
+    <div class="button" data-sound="2022.12.05 我看起來像是會拋棄你們的人嗎？我那麼重情重義">我看起來像是會拋棄你們的人嗎？我那麼重情重義</div>
+    <!-- 2022.12.09 完蛋了手機忘記充電了.mp3 -->
+    <div class="button" data-sound="2022.12.09 完蛋了手機忘記充電了">完蛋了手機忘記充電了</div>
+    <!-- 2022.12.09 我沒有變胖好嗎.mp3 -->
+    <div class="button" data-sound="2022.12.09 我沒有變胖好嗎">我沒有變胖好嗎</div>
+    <!-- 2022.12.10 我要睡覺.mp3 -->
+    <div class="button" data-sound="2022.12.10 我要睡覺">我要睡覺</div>
+    <!-- 2022.12.10 絕對沒有在臭的意思.mp3 -->
+    <div class="button" data-sound="2022.12.10 絕對沒有在臭的意思">絕對沒有在臭的意思</div>
+
+
+
   </div>
 </body>
 </html>
