@@ -7,10 +7,10 @@ $(() => {
   $('.button').each(function() {
     let { sound, loop, keybind } = this.dataset;
     sound = new Audio(`./sounds/meow2/${sound}.mp3`);
-    sound.addEventListener('loadedmetadata', () => {
-      let sound = this.sound;
-      this.innerHTML = `${this.innerHTML} <span style="color: green; font-size: 0.8em">${sound.duration.toFixed(1)}s</span>`;
-    });
+    // sound.addEventListener('loadedmetadata', () => {
+    //   let sound = this.sound;
+    //   this.innerHTML = `${this.innerHTML} <span style="color: green; font-size: 0.8em">${sound.duration.toFixed(1)}s</span>`;
+    // });
     sounds.push(sound);
 
     sound.loop = typeof loop !== 'undefined';

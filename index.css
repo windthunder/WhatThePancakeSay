@@ -1,17 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft JhengHei";
+}
+
+/* width > 1024 */
+@media screen and (min-width: 1024px) {
+  .text {
+    display: block !important;
+  }
+  .padding1 {
+    padding-right: calc(50px);
+  }
+  .padding2 {
+    padding-left: calc(100px + 2%);
+  }
+}
+
 .button {
   border: 1px solid #000;
-  /* display: block; */
-  /* border-radius: 5px; */
+  display: block;
   padding: 8px;
   box-sizing: border-box;
   background-color: #fff;
-  margin: 10px;
-  width: 100px;
-  height: 100px;
+  margin: 1%;
+  max-width: 100px;
+  width: 7%;
+  aspect-ratio: 1;
+}
+
+.text {
+  display: none;
 }
 
 .button.l {
   text-align: left;
+  background-image: url("./未命名-1.png");
+  background-size: cover;
 }
 
 .button.r {
@@ -19,12 +44,18 @@
 }
 
 .button.active {
-  background-color: #000;
-  color: #fff;
+  transform: translate(5px, 5px);
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  position: relative;
+  /* left: 110px; */
 }
 
 #page1 {
-  height: 2000px;
+  /* height: 2000px; */
 }
 
 #page2 {
