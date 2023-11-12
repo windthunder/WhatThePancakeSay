@@ -23,8 +23,8 @@ $(() => {
   });
 
   $(document).keyup((e) => {
-    console.log(e.key);
-    let keybind = keybinds[e.key];
+    let key = e.key.toLowerCase();
+    let keybind = keybinds[key];
 
     if (keybind) {
       keybind.click();
