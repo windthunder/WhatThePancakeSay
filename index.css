@@ -54,11 +54,15 @@ body {
   /* left: 110px; */
 }
 
-#page1 {
-  /* height: 2000px; */
+.control {
+  border: 1px solid #000;
+  border-radius: 5px;
+  line-height: 1.4em;
+  display: inline-block;
+  padding: 0 5px;
+  cursor: pointer;
 }
 
-#page2 {
-  min-height: 2000px;
-  display: none;
+#record.active {
+  background-color: #000;
 }
