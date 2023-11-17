@@ -1,7 +1,10 @@
-function renewList(record) {
+function renewList(records) {
+  // 儲存到localStorage
+  localStorage.setItem('records', JSON.stringify(records));
+
   $('#records').html('');
 
-  Object.keys(record).forEach((name) => {
+  Object.keys(records).forEach((name) => {
     $('#records').append(`
       <div data-name="${name}" class="record">
         ${name}
@@ -76,7 +79,7 @@ $(() => {
     this.sound.play();
   });
 
-  let records = {};
+  let records = JSON.parse(localStorage.getItem('records')) || {};
   let record = [];
   let recording = false;
   let recordingStart;
