@@ -80,6 +80,7 @@ $(() => {
   });
 
   let records = JSON.parse(localStorage.getItem('records')) || {};
+  renewList(records);
   let record = [];
   let recording = false;
   let recordingStart;
